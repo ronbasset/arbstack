@@ -1,0 +1,21 @@
+pairs: [BTC, ETH, SOL]
+venues:
+  spot: BINANCE
+  futures: KRAKEN
+fees_bps:
+  pre_vip_full_cycle: 25.0
+  vip1_full_cycle: 23.5
+maker_buffers_bps: { BTC: 4, ETH: 5, SOL: 8 }
+taker_buffers_bps: { BTC: 3, ETH: 3, SOL: 4 }
+ttl_ms: 120
+slip_guards_bps: { BTC: 15, ETH: 18, SOL: 22 }
+entry_exit_bands_decimal:
+  quiet:   { BTC: [0.0022, 0.0006], ETH: [0.0028, 0.0007], SOL: [0.0034, 0.0009] }
+  base:    { BTC: [0.0025, 0.0006], ETH: [0.0030, 0.0008], SOL: [0.0038, 0.0010] }
+  busy:    { BTC: [0.0020, 0.0005], ETH: [0.0026, 0.0007], SOL: [0.0030, 0.0008] }
+size_usd_per_ticket: { BTC: 20000, ETH: 15000, SOL: 8000 }
+max_open_positions: { BTC: 1, ETH: 1, SOL: 1 }
+usdt_usd_rate: 1.0
+depeg_halt_threshold: 0.002
+funding_gate_bps_per_hour: 2.5
+divergence_halt_pct: 0.0005
