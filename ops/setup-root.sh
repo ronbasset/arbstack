@@ -37,7 +37,7 @@ cd /opt/arbstack
 python3.10 -m venv venv
 source venv/bin/activate
 pip install --upgrade pip
-pip install ccxt websockets pandas pyarrow prometheus-client pyyaml
+pip install ccxt websockets pandas pyarrow prometheus-client pyyaml python-dotenv
 "
 
 # Create .env.example
