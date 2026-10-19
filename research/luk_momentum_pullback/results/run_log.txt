@@ -1,0 +1,128 @@
+
+=== stocks: ['dropped 2 no-trade (carried) rows', 'dropped 39022 rows lacking OHLCV', '669 symbols, 2209 bars, 2018-01-02 -> 2026-10-15']
+[features] US stocks (point-in-time S&P 500): {'bars': 2209, 'symbols': 669, 'eligible_symbol_days': 838740, 'structure_days': 73828, 'setups': 8056, 'rs_pass_setups': 596}
+[stocks] baseline 3R: {"total_return": 0.018, "cagr": 0.002, "max_drawdown": -0.169, "sharpe": 0.068, "sortino": 0.071, "ann_vol": 0.066, "n_trades": 221, "exposure_avg": 0.175, "pct_days_invested": 0.52, "years": 7.784, "win_rate": 0.299, "avg_win_R": 2.729, "avg_loss_R": -1.123, "expectancy_R": 0.027, "profit_factor": 1.021, "avg_bars": 9.502, "median_bars": 5.0, "trades_per_year": 28.393, "pct_partial": 0.281}
+[stocks] baseline 5R: {"total_return": 0.132, "cagr": 0.016, "max_drawdown": -0.202, "sharpe": 0.238, "sortino": 0.264, "ann_vol": 0.081, "n_trades": 217, "exposure_avg": 0.23, "pct_days_invested": 0.605, "years": 7.784, "win_rate": 0.24, "avg_win_R": 4.079, "avg_loss_R": -1.116, "expectancy_R": 0.129, "profit_factor": 1.135, "avg_bars": 12.0, "median_bars": 4.0, "trades_per_year": 27.879, "pct_partial": 0.207}
+[stocks] SPY B&H: cagr=0.173 dd=-0.337 sharpe=0.93
+[stocks] sensitivity ...
+              stop_pct=0.02    trades= 225 cagr=  -1.6% dd= -23.5% sharpe=-0.21 expR=-0.10
+              stop_pct=0.025   trades= 220 cagr=  -0.0% dd= -18.2% sharpe= 0.03 expR= 0.01
+              stop_pct=0.0275  trades= 221 cagr=   0.2% dd= -16.9% sharpe= 0.07 expR= 0.03
+              stop_pct=0.03    trades= 225 cagr=   1.3% dd= -16.4% sharpe= 0.23 expR= 0.10
+              stop_pct=0.035   trades= 228 cagr=   1.1% dd= -13.3% sharpe= 0.20 expR= 0.09
+              stop_pct=0.04    trades= 224 cagr=   0.6% dd= -18.2% sharpe= 0.13 expR= 0.06
+              stop_pct=0.06    trades= 222 cagr=   1.4% dd= -15.7% sharpe= 0.28 expR= 0.11
+              stop_pct=0.08    trades= 217 cagr=   2.4% dd=  -7.5% sharpe= 0.52 expR= 0.18
+              risk_pct=0.0025  trades= 235 cagr=  -0.0% dd= -11.1% sharpe= 0.01 expR= 0.00
+              risk_pct=0.005   trades= 221 cagr=   0.2% dd= -16.9% sharpe= 0.07 expR= 0.03
+              risk_pct=0.0075  trades= 209 cagr=   0.8% dd= -22.8% sharpe= 0.13 expR= 0.05
+              risk_pct=0.01    trades= 198 cagr=   0.9% dd= -27.6% sharpe= 0.14 expR= 0.05
+             partial_R=3.0     trades= 221 cagr=   0.2% dd= -16.9% sharpe= 0.07 expR= 0.03
+             partial_R=5.0     trades= 217 cagr=   1.6% dd= -20.2% sharpe= 0.24 expR= 0.13
+          partial_frac=0.3     trades= 221 cagr=  -0.2% dd= -18.3% sharpe= 0.01 expR= 0.00
+          partial_frac=0.5     trades= 221 cagr=   0.2% dd= -16.9% sharpe= 0.07 expR= 0.03
+     rs_rank_threshold=0.5     trades= 295 cagr=   0.3% dd= -23.6% sharpe= 0.08 expR= 0.03
+     rs_rank_threshold=0.6     trades= 273 cagr=   1.4% dd= -23.2% sharpe= 0.23 expR= 0.09
+     rs_rank_threshold=0.7     trades= 221 cagr=   0.2% dd= -16.9% sharpe= 0.07 expR= 0.03
+     rs_rank_threshold=0.8     trades= 152 cagr=  -0.6% dd= -22.3% sharpe=-0.09 expR=-0.05
+         rs_min_return=0.2     trades= 346 cagr=  -1.0% dd= -16.7% sharpe=-0.08 expR=-0.03
+         rs_min_return=0.3     trades= 221 cagr=   0.2% dd= -16.9% sharpe= 0.07 expR= 0.03
+         rs_min_return=0.4     trades= 134 cagr=   0.2% dd= -11.1% sharpe= 0.07 expR= 0.04
+         max_positions=5       trades= 218 cagr=   0.1% dd= -17.0% sharpe= 0.05 expR= 0.02
+         max_positions=8       trades= 221 cagr=   0.2% dd= -16.9% sharpe= 0.07 expR= 0.03
+         max_positions=10      trades= 221 cagr=   0.2% dd= -16.9% sharpe= 0.07 expR= 0.03
+    max_gross_exposure=1.0     trades= 221 cagr=   0.2% dd= -16.9% sharpe= 0.07 expR= 0.03
+    max_gross_exposure=1.5     trades= 223 cagr=   0.2% dd= -16.9% sharpe= 0.06 expR= 0.03
+      trail_activate_R=0.0     trades= 221 cagr=   0.2% dd= -16.9% sharpe= 0.07 expR= 0.03
+      trail_activate_R=1.0     trades= 226 cagr=  -1.0% dd= -19.5% sharpe=-0.15 expR=-0.06
+      trail_activate_R=2.0     trades= 222 cagr=  -0.5% dd= -18.1% sharpe=-0.05 expR=-0.03
+            entry_mode=breakout trades= 221 cagr=   0.2% dd= -16.9% sharpe= 0.07 expR= 0.03
+            entry_mode=zone_open trades= 316 cagr=   1.2% dd= -16.0% sharpe= 0.19 expR= 0.07
+            stall_bars=10      trades= 221 cagr=  -0.2% dd= -18.8% sharpe=-0.00 expR=-0.00
+            stall_bars=15      trades= 221 cagr=   0.2% dd= -16.9% sharpe= 0.07 expR= 0.03
+            stall_bars=25      trades= 221 cagr=   0.4% dd= -16.7% sharpe= 0.10 expR= 0.04
+         max_hold_bars=20      trades= 225 cagr=   0.3% dd= -17.0% sharpe= 0.08 expR= 0.03
+         max_hold_bars=60      trades= 221 cagr=   0.2% dd= -16.9% sharpe= 0.07 expR= 0.03
+         max_hold_bars=120     trades= 221 cagr=   0.2% dd= -16.9% sharpe= 0.07 expR= 0.03
+          ext_atr_mult=0.0     trades= 221 cagr=   0.2% dd= -16.9% sharpe= 0.07 expR= 0.03
+          ext_atr_mult=2.0     trades= 222 cagr=   0.5% dd= -15.9% sharpe= 0.12 expR= 0.05
+          ext_atr_mult=3.0     trades= 221 cagr=   0.2% dd= -16.9% sharpe= 0.07 expR= 0.03
+             stop_mode=fixed   trades= 221 cagr=   0.2% dd= -16.9% sharpe= 0.07 expR= 0.03
+             stop_mode=tighter trades= 227 cagr=  -1.0% dd= -19.9% sharpe=-0.12 expR=-0.06
+             vcp_ratio=0.9     trades= 221 cagr=   0.2% dd= -16.9% sharpe= 0.07 expR= 0.03
+             vcp_ratio=1.0     trades= 328 cagr=   0.5% dd= -23.3% sharpe= 0.10 expR= 0.03
+     max_prior_touches=3       trades=  52 cagr=   0.2% dd=  -8.0% sharpe= 0.07 expR= 0.06
+     max_prior_touches=8       trades= 221 cagr=   0.2% dd= -16.9% sharpe= 0.07 expR= 0.03
+     max_prior_touches=20      trades= 349 cagr=  -0.2% dd= -20.6% sharpe= 0.02 expR= 0.00
+          zone_tol_pct=0.01    trades= 219 cagr=  -1.5% dd= -19.6% sharpe=-0.22 expR=-0.10
+          zone_tol_pct=0.015   trades= 221 cagr=   0.2% dd= -16.9% sharpe= 0.07 expR= 0.03
+          zone_tol_pct=0.02    trades= 225 cagr=  -1.3% dd= -22.6% sharpe=-0.18 expR=-0.08
+       zone_min_levels=2       trades= 306 cagr=  -0.6% dd= -24.2% sharpe=-0.04 expR=-0.02
+       zone_min_levels=3       trades= 221 cagr=   0.2% dd= -16.9% sharpe= 0.07 expR= 0.03
+       zone_min_levels=4       trades=  57 cagr=   0.6% dd=  -8.5% sharpe= 0.18 expR= 0.16
+[stocks] done in 70s
+
+=== crypto: ['10 Binance majors from Speirsy11/crypto-dataset (2017-08-17 -> 2026-10-17)', '208 Binance alt pairs from mdeacey/binance-crypto-coins-prices (daily, ends 2024-03-13)', '218 symbols, 3212 bars, 2018-01-01 -> 2026-10-17']
+[features] Crypto (Binance USDT spot): {'bars': 3212, 'symbols': 218, 'eligible_symbol_days': 87924, 'structure_days': 6705, 'setups': 959, 'rs_pass_setups': 157}
+[crypto] baseline 3R: {"total_return": 0.441, "cagr": 0.048, "max_drawdown": -0.266, "sharpe": 0.551, "sortino": 0.3, "ann_vol": 0.093, "n_trades": 63, "exposure_avg": 0.013, "pct_days_invested": 0.073, "years": 7.792, "win_rate": 0.27, "avg_win_R": 10.071, "avg_loss_R": -1.666, "expectancy_R": 1.501, "profit_factor": 1.828, "avg_bars": 3.873, "median_bars": 1.0, "trades_per_year": 8.085, "pct_partial": 0.27}
+[crypto] baseline 5R: {"total_return": 0.501, "cagr": 0.053, "max_drawdown": -0.24, "sharpe": 0.599, "sortino": 0.333, "ann_vol": 0.094, "n_trades": 63, "exposure_avg": 0.015, "pct_days_invested": 0.078, "years": 7.792, "win_rate": 0.222, "avg_win_R": 13.044, "avg_loss_R": -1.634, "expectancy_R": 1.628, "profit_factor": 1.886, "avg_bars": 4.206, "median_bars": 1.0, "trades_per_year": 8.085, "pct_partial": 0.222}
+[crypto] BTC B&H: cagr=0.482 dd=-0.766 sharpe=0.95
+[crypto] sensitivity ...
+              stop_pct=0.02    trades=  63 cagr=   6.2% dd= -31.5% sharpe= 0.56 expR= 2.07
+              stop_pct=0.025   trades=  63 cagr=   5.2% dd= -27.1% sharpe= 0.56 expR= 1.66
+              stop_pct=0.0275  trades=  63 cagr=   4.8% dd= -26.6% sharpe= 0.55 expR= 1.50
+              stop_pct=0.03    trades=  63 cagr=   5.3% dd= -21.7% sharpe= 0.64 expR= 1.58
+              stop_pct=0.035   trades=  63 cagr=   5.0% dd= -19.2% sharpe= 0.67 expR= 1.44
+              stop_pct=0.04    trades=  63 cagr=   4.9% dd= -15.7% sharpe= 0.71 expR= 1.35
+              stop_pct=0.06    trades=  63 cagr=   3.5% dd= -10.6% sharpe= 0.69 expR= 0.93
+              stop_pct=0.08    trades=  63 cagr=   1.9% dd=  -9.0% sharpe= 0.46 expR= 0.51
+              risk_pct=0.0025  trades=  63 cagr=   2.7% dd= -15.5% sharpe= 0.54 expR= 1.50
+              risk_pct=0.005   trades=  63 cagr=   4.8% dd= -26.6% sharpe= 0.55 expR= 1.50
+              risk_pct=0.0075  trades=  63 cagr=   6.5% dd= -35.3% sharpe= 0.55 expR= 1.50
+              risk_pct=0.01    trades=  63 cagr=   6.9% dd= -37.6% sharpe= 0.55 expR= 1.24
+             partial_R=3.0     trades=  63 cagr=   4.8% dd= -26.6% sharpe= 0.55 expR= 1.50
+             partial_R=5.0     trades=  63 cagr=   5.3% dd= -24.0% sharpe= 0.60 expR= 1.63
+          partial_frac=0.3     trades=  63 cagr=   6.6% dd= -27.9% sharpe= 0.61 expR= 2.14
+          partial_frac=0.5     trades=  63 cagr=   4.8% dd= -26.6% sharpe= 0.55 expR= 1.50
+     rs_rank_threshold=0.5     trades= 129 cagr=   4.0% dd= -31.1% sharpe= 0.42 expR= 0.65
+     rs_rank_threshold=0.6     trades= 106 cagr=   4.7% dd= -26.7% sharpe= 0.50 expR= 0.88
+     rs_rank_threshold=0.7     trades=  63 cagr=   4.8% dd= -26.6% sharpe= 0.55 expR= 1.50
+     rs_rank_threshold=0.8     trades=  36 cagr=   4.8% dd= -27.4% sharpe= 0.57 expR= 2.61
+         rs_min_return=0.2     trades=  72 cagr=   4.7% dd= -28.0% sharpe= 0.54 expR= 1.30
+         rs_min_return=0.3     trades=  63 cagr=   4.8% dd= -26.6% sharpe= 0.55 expR= 1.50
+         rs_min_return=0.4     trades=  59 cagr=   4.8% dd= -24.8% sharpe= 0.56 expR= 1.61
+         max_positions=5       trades=  63 cagr=   4.8% dd= -26.6% sharpe= 0.55 expR= 1.50
+         max_positions=8       trades=  63 cagr=   4.8% dd= -26.6% sharpe= 0.55 expR= 1.50
+         max_positions=10      trades=  63 cagr=   4.8% dd= -26.6% sharpe= 0.55 expR= 1.50
+    max_gross_exposure=1.0     trades=  63 cagr=   4.8% dd= -26.6% sharpe= 0.55 expR= 1.50
+    max_gross_exposure=1.5     trades=  63 cagr=   4.8% dd= -26.6% sharpe= 0.55 expR= 1.50
+      trail_activate_R=0.0     trades=  63 cagr=   4.8% dd= -26.6% sharpe= 0.55 expR= 1.50
+      trail_activate_R=1.0     trades=  63 cagr=   4.5% dd= -26.3% sharpe= 0.53 expR= 1.44
+      trail_activate_R=2.0     trades=  63 cagr=   4.9% dd= -26.3% sharpe= 0.56 expR= 1.51
+            entry_mode=breakout trades=  63 cagr=   4.8% dd= -26.6% sharpe= 0.55 expR= 1.50
+            entry_mode=zone_open trades=  72 cagr=  -1.0% dd= -23.5% sharpe=-0.17 expR=-0.18
+            stall_bars=10      trades=  63 cagr=   4.8% dd= -26.6% sharpe= 0.55 expR= 1.50
+            stall_bars=15      trades=  63 cagr=   4.8% dd= -26.6% sharpe= 0.55 expR= 1.50
+            stall_bars=25      trades=  63 cagr=   4.8% dd= -26.6% sharpe= 0.55 expR= 1.50
+         max_hold_bars=20      trades=  63 cagr=   5.0% dd= -15.5% sharpe= 0.64 expR= 1.55
+         max_hold_bars=60      trades=  63 cagr=   4.8% dd= -26.6% sharpe= 0.55 expR= 1.50
+         max_hold_bars=120     trades=  63 cagr=   4.8% dd= -26.6% sharpe= 0.55 expR= 1.50
+          ext_atr_mult=0.0     trades=  63 cagr=   4.8% dd= -26.6% sharpe= 0.55 expR= 1.50
+          ext_atr_mult=2.0     trades=  63 cagr=   3.8% dd= -24.8% sharpe= 0.51 expR= 1.15
+          ext_atr_mult=3.0     trades=  63 cagr=   4.2% dd= -24.6% sharpe= 0.54 expR= 1.28
+             stop_mode=fixed   trades=  63 cagr=   4.8% dd= -26.6% sharpe= 0.55 expR= 1.50
+             stop_mode=tighter trades=  63 cagr=   4.7% dd= -27.1% sharpe= 0.54 expR= 1.48
+             vcp_ratio=0.9     trades=  63 cagr=   4.8% dd= -26.6% sharpe= 0.55 expR= 1.50
+             vcp_ratio=1.0     trades=  89 cagr=   4.3% dd= -29.9% sharpe= 0.48 expR= 0.99
+     max_prior_touches=3       trades=  15 cagr=   4.5% dd= -19.2% sharpe= 0.59 expR= 5.91
+     max_prior_touches=8       trades=  63 cagr=   4.8% dd= -26.6% sharpe= 0.55 expR= 1.50
+     max_prior_touches=20      trades=  91 cagr=   4.0% dd= -30.8% sharpe= 0.45 expR= 0.91
+          zone_tol_pct=0.01    trades=  63 cagr=   4.8% dd= -26.6% sharpe= 0.55 expR= 1.50
+          zone_tol_pct=0.015   trades=  63 cagr=   4.8% dd= -26.6% sharpe= 0.55 expR= 1.50
+          zone_tol_pct=0.02    trades=  62 cagr=   4.9% dd= -26.6% sharpe= 0.56 expR= 1.54
+       zone_min_levels=2       trades= 149 cagr=   6.2% dd= -27.8% sharpe= 0.53 expR= 0.93
+       zone_min_levels=3       trades=  63 cagr=   4.8% dd= -26.6% sharpe= 0.55 expR= 1.50
+       zone_min_levels=4       trades=   9 cagr=  -0.3% dd=  -5.7% sharpe=-0.18 expR=-0.48
+[crypto] done in 19s
+wrote /home/user/arbstack/research/luk_momentum_pullback/results/SUMMARY.md
+exit 0
